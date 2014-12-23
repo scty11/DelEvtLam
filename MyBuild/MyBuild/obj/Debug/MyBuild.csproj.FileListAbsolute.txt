@@ -7,3 +7,6 @@ C:\Users\scottyboi\Documents\jquery\code\delEvLamda\MyBuild\MyBuild\obj\Debug\My
 C:\Users\scottyboi\Documents\GitHub\DelEvtLam\MyBuild\MyBuild\bin\Debug\MyBuild.exe.config
 C:\Users\scottyboi\Documents\GitHub\DelEvtLam\MyBuild\MyBuild\obj\Debug\MyBuild.exe
 C:\Users\scottyboi\Documents\GitHub\DelEvtLam\MyBuild\MyBuild\obj\Debug\MyBuild.pdb
+C:\Users\scottyboi\Documents\GitHub\DelEvtLam\MyBuild\MyBuild\bin\Debug\MyBuild.exe
+C:\Users\scottyboi\Documents\GitHub\DelEvtLam\MyBuild\MyBuild\bin\Debug\MyBuild.pdb
+C:\Users\scottyboi\Documents\GitHub\DelEvtLam\MyBuild\MyBuild\obj\Debug\MyBuild.csprojResolveAssemblyReference.cache

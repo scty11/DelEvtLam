@@ -21,6 +21,7 @@ namespace MyBuild
         {
             for (int i = 0; i < 10; i++)
             {
+                Task.Delay(1000).Wait();
                 //On.... is a naming convention for the event.
                 OnWorkPerformed(i + 1, y);
             }
