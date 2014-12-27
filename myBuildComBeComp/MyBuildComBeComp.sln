@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicatingBetweenControls", "CommunicatingBetweenControls\CommunicatingBetweenControls.csproj", "{CD8CBEB6-507B-4758-8A6E-C4A7026E6259}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBuildComBeComp", "CommunicatingBetweenControls\MyBuildComBeComp.csproj", "{CD8CBEB6-507B-4758-8A6E-C4A7026E6259}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
