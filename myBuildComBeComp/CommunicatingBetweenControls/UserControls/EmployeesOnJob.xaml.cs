@@ -47,7 +47,10 @@ namespace CommunicatingBetweenControls.UserControls
         public EmployeesOnJob()
         {
             InitializeComponent();
+            //when the event occurs this method wll be called as it is in the invocation list.
+            Mediator.GetInstance().JobChanged += (s, e) => BindData(e.Job);
         }
+
 
         private void BindData(Job job)
         {
