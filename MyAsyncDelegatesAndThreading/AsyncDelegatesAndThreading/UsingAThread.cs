@@ -14,7 +14,7 @@ namespace ThreadsAndDelegates
     public partial class UsingAThread : Form
     {
         int _Max;
-
+        delegate void ShowProgressHandler();
         public UsingAThread()
         {
             InitializeComponent();
@@ -30,13 +30,25 @@ namespace ThreadsAndDelegates
         {
             _Max = 100;
             //Start thread
-
+            
+            var t = Task.Run(() => StartProcess());
+            if (t.Exception != null)
+            {
+                throw t.Exception;
+            }
             MessageBox.Show("Done with operation!!");
         }
 
         private void StartProcess()
         {
 
+            if (pbStatus.InvokeRequired)
+            {
+                var del = new ShowProgressHandler(StartProcess);
+                this.BeginInvoke(del);
+            }
+            else
+            {
                 this.Refresh();
                 this.pbStatus.Maximum = _Max;
                 for (int i = 0; i <= _Max; i++)
@@ -45,6 +57,7 @@ namespace ThreadsAndDelegates
                     this.lblOutput.Text = i.ToString();
                     this.pbStatus.Value = i;
                 }
+            }
 
         }
     }
