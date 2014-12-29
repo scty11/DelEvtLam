@@ -17,5 +17,10 @@ namespace MyBuild
             
             action(x, y);
         }
+
+        public static void FuncAdd(int p1, int p2, Func<int, int, int> reAdee)
+        {
+            Console.WriteLine(reAdee(p1,p2));
+        }
     }
 }

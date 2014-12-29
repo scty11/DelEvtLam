@@ -27,6 +27,8 @@ namespace MyBuild
 
             //This removes the need to create a delegate like the one above Program.
             Action<int,int> ADel = (x,y) => { Console.WriteLine(x + y); };
+            Func<int, int, int> reAdee = (x, y) => { return x + y; };
+            ProcessData.FuncAdd(3, 4, reAdee);
             ProcessData.OtherData(5, 1, ADel);
 
             Console.Read();
